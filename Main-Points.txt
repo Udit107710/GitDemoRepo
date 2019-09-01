@@ -1,0 +1,71 @@
+empty demo repository
+git init
+touch file.txt
+git status
+GIT has 3 stages: 
+	1. untracked: just a new random file which github doesnot know of. 
+-> git add file.txt -> git status ->
+	2. staged: Now edit and save this file. Again run git status. Now as this file has come from untracked to staged therefore git will monitor this file now. 
+	3. committed: git commit -m "message". If we close the terminal. All the stages will be lost. To ensure the changes are monitored we commit it.
+THESE ALL THINGS ARE WORKING ON THE GIT VERSIONCONTROL - LOCAL SERVER ONLY. NOT ON GITHUB. 
+
+CONNECTIVITY of git & github 
+git remote add origin https://github.com/mridul-arora/demo.git 
+git push -u origin master 
+(origin: the link between the local and the main server) 
+(master: a branch which contains a stable project with zero errors)
+(fork: already existing repo ko fork karo i.e. uditchaudhary-demo) 
+make a new folder GitDemoRepo OR demo1
+PULL: 
+git init : intialize git first
+git pull https://github.com/mridul-arora/GitDemoRepo.git
+Edit the file 
+git status 
+git add filename 
+git status 
+git commit -m "message"
+git status 
+git remote add origin https://github.com/mridul-sarora/GitDemoRepo.git
+git push -u origin master 
+(origin bus ek variable hai, hum usse koi aur naam bhi likh sakte hai)
+Go to Udit Repo -> new pull request -> from mridul to udit along with the repo name.
+
+TYPES OF MERGING:
+1. Fast-track merging: Only merges. Giving no errors. For example: There are 4 files whose data is not interlinked with each other and we append(add without deleting those old files),  
+2. Latest code ko poora over-right kar deta hai old version pe.
+
+Goto my old demo folder and run command -> git pull https://github.com/Udit107710/GitDemoRepo.git -> ERROR (refusing to merge unrelated histories) Branch is not matching i.e. the files stored locally and the files in the repo are not the same. Therefore we can't pull. We can either MERGE or create a NEW BRANCH. 
+Now run command -> git fetch https://github.com/Udit107710/GitDemoRepo.git -> (This ensures a new git Branch is created)
+Now run -> git branch -a 
+
+*Major usecase of VCS(Version Control System): rollbacks can come handy* 
+git log -> copy commit ID from here
+git reset --hard HEAD  8ba1e2d13585e5764418e18b82bb582f45ae6902 -> head is now at 3513432 demo 
+git status 
+
+Developing APIs : Backend Devleoper (DBMS & Data Structures are a must): 
+Pick 1. Work on it. But make sure at the end of the day if you are a Backend developer you must know all the 4. Ace of 1 & jack of All is what we aim for.(When and where what type of DBMS software, or which technology among these 4 we have to use : ki ab is cheez ko implement karna chahiye yaahan)
+1. spring : is in java : Some companies made their code in java. Now they are too resisting to shift their whole project in some other much better language. Therefore they use spring whose code is written in java language. 
+2. django : is in python : MVT(Model[handles database] View[business logic b/w model & template] Template[handles UI]) is a software design pattern. It already has pre-defined security feautures. We can pass queries here. 
+3. flask  : is in python : To not pass any query here. No security features. 
+4. node : is in javascript : JS har code ko parallelly run kar deta hai. We can't find kaha error aaya. To work parallely we use node which ensures pehle ye ho jaaye fir ye karna.   
+
+DOCKER: base OS pe docker se ek container OS bana diya. Pros: 3 people prefer 3 different OSs in their daily life. The code is available in a 4th OS. Ab kya karre prabhu? Through docker we can create small containerized OSs which contain the only softwares and codes those 3 really need. 
+Lo ji, ab deployment rhe gya bus
+
+GCP ??
+
+MACHINE LEARNING
+ML CC Crash Course: Google promotes this library to promote tensorflow. It has practicle assignments too.
+Kaggle: pe we have competitional assinments. Look for approach, why exactly we used this algo in this situation.  
+
+GOAL (of 6 months) : Automation
+To automate all the processes in application development where once we commit and push a version of our project on github it automatically updates it on an interface which can be an APP, a WEBSITE, CLOUD, anything we want. 
+
+YE 4 CHEEZ HAI, JO KUCHH BHI HO JAAYE HONI TOH CHAHIYE 
+frontend
+backend
+deployement
+coding
+
+Wednesday 3 to 6 doubts. Saturday you reach a checkpoint. 
