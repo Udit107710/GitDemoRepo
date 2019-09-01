@@ -69,15 +69,3 @@ deployement
 coding
 
 Wednesday 3 to 6 doubts. Saturday you reach a checkpoint. 
-
-More important points: 
-1. stackoverflow & codesnippets & medium blogs : resources jaahaan code mil jaega.
-2. flutter: nakul sir ke friend
-docker
-ML
-competitive coding
-cloud deployement
-3. pomedoro culture
-4. hashmap DS: In python its known as a dictionary. 
-queue:FIFO
-CACHE implement kar diya using hashmap and queue. 
